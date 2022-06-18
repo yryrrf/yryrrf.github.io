@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <div>
+            <button onclick="array.generateRandomArray(100,500);">Generate Random Array</button>
+            <button onclick="sort.bubbleSort(array)">Bubble Sort</button>
+            <button onclick="sort.insertionSort(array)">Insertion Sort</button>
+            <button onclick="sort.selectionSort(array)">Selection Sort</button>
+            <button onclick="sort.mergeSort(array)">Merge Sort</button>
+            <button onclick="sort.quickSort(array)">Quick Sort</button>
+            <button id="stop" onclick="sort.sortingStop();">Stop</button>
+            <input type="range" oninput="delaySecond= this.value;" min="1" max="1000" value="1">
+            
+        </div>
+        <canvas width="2000px" height="30px" id="info-vis"></canvas>
+            <canvas width="2000px" height="500px" id="array-vis"></canvas>
+    </body>
+    <script src="paint.js"></script>
+    <script src="infoCounter.js"></script>
+    <script src="array.js"></script>
+    <script src="index.js"></script>
+    <script src="sort.js"></script>
+    <script src="main.js"></script>
+</html>
